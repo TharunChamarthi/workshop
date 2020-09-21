@@ -1,0 +1,182 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: wheat;
+}
+.logo img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    
+}
+
+
+
+header{
+   /* background-image: url("porsche.jpg"); */
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-position: center center;
+}
+
+section .content{
+    
+    
+    margin: 10px;
+    background-image: url("tools.jpg");
+    background-size: cover;
+    min-height: 100vh;
+
+}
+.sec{
+    display: flex;
+}
+
+.sec .map{
+    margin: 10px;
+    min-height: 50vh;
+    width: 50%;
+   
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sec .dis{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    line-height: 2;
+    
+}
+.content {
+    
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    margin: auto  ;
+    max-width: 100%;
+    text-align: center;
+}
+.content h1{
+    color: #00c2ff;
+    margin-bottom: 0%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+nav {
+
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+} 
+
+nav .logo{
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 1px ;
+}
+
+
+nav li a{
+    color: white;
+    padding : 1rem;
+    text-decoration: none;
+}
+.selected{
+    font-weight: bold;
+}
+
+.highlight{
+    background-color: #00c2ff;
+    color: white;
+    padding : 1rem;
+    text-decoration: none;
+}
+footer{
+    
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+
+}
+.multicolortext {
+    background-image: linear-gradient(45deg,red, red, green,blue, rgb(0, 238, 255), black,black);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .multicolorsubtext {
+    background-image: linear-gradient(45deg, black ,rgb(238, 10, 143),gray, rgb(47, 218, 203), black);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+footer strong{
+    color: #00c2ff;
+}
+
+@media screen and (max-width: 823px) {
+    .content{
+        font-size: 1rem;
+        margin: 1rem auto 0;
+        
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+
+
+    nav ul{
+        flex-direction: column;
+
+    }
+    nav li:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    nav .highlight{
+        display: none;
+    }
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer li{
+        margin: 1rem;
+        text-align: center;
+    }
+
+
+}
+
